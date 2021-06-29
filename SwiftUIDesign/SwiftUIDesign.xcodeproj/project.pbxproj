@@ -14,6 +14,9 @@
 		0C1D0ED726890A960068323E /* TechnologyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D0ED426890A960068323E /* TechnologyCardView.swift */; };
 		0C1D0ED826890A960068323E /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D0ED526890A960068323E /* SideBarView.swift */; };
 		0C1D0ED926890A960068323E /* CourseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D0ED626890A960068323E /* CourseCardView.swift */; };
+		0CBE24F9268A66530052FE61 /* ListViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE24F8268A66530052FE61 /* ListViewComponent.swift */; };
+		0CBE24FD268A695E0052FE61 /* SwiftUIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE24FC268A695E0052FE61 /* SwiftUIData.swift */; };
+		0CBE2502268A6A5B0052FE61 /* SwiftUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE2501268A6A5B0052FE61 /* SwiftUIModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		0C1D0ED426890A960068323E /* TechnologyCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnologyCardView.swift; sourceTree = "<group>"; };
 		0C1D0ED526890A960068323E /* SideBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 		0C1D0ED626890A960068323E /* CourseCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCardView.swift; sourceTree = "<group>"; };
+		0CBE24F8268A66530052FE61 /* ListViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewComponent.swift; sourceTree = "<group>"; };
+		0CBE24FC268A695E0052FE61 /* SwiftUIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIData.swift; sourceTree = "<group>"; };
+		0CBE2501268A6A5B0052FE61 /* SwiftUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		0C1D0EC226890A3F0068323E /* SwiftUIDesign */ = {
 			isa = PBXGroup;
 			children = (
+				0CBE2500268A6A470052FE61 /* Model */,
+				0CBE24FB268A69440052FE61 /* Data */,
 				0C1D0EC326890A3F0068323E /* SwiftUIDesignApp.swift */,
 				0C1D0ED326890A960068323E /* View */,
 				0C1D0EC526890A3F0068323E /* ContentView.swift */,
@@ -82,8 +90,25 @@
 				0C1D0ED426890A960068323E /* TechnologyCardView.swift */,
 				0C1D0ED526890A960068323E /* SideBarView.swift */,
 				0C1D0ED626890A960068323E /* CourseCardView.swift */,
+				0CBE24F8268A66530052FE61 /* ListViewComponent.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0CBE24FB268A69440052FE61 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0CBE24FC268A695E0052FE61 /* SwiftUIData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0CBE2500268A6A470052FE61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CBE2501268A6A5B0052FE61 /* SwiftUIModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CBE24F9268A66530052FE61 /* ListViewComponent.swift in Sources */,
+				0CBE2502268A6A5B0052FE61 /* SwiftUIModel.swift in Sources */,
 				0C1D0EC626890A3F0068323E /* ContentView.swift in Sources */,
 				0C1D0ED926890A960068323E /* CourseCardView.swift in Sources */,
+				0CBE24FD268A695E0052FE61 /* SwiftUIData.swift in Sources */,
 				0C1D0ED826890A960068323E /* SideBarView.swift in Sources */,
 				0C1D0ED726890A960068323E /* TechnologyCardView.swift in Sources */,
 				0C1D0EC426890A3F0068323E /* SwiftUIDesignApp.swift in Sources */,

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isSideBarShowing = false
+    @State var isPresented = false
     var body: some View {
         ZStack(alignment:.leading) {
             Color("AppThemeColor")
@@ -57,6 +58,20 @@ struct ContentView: View {
                                                 }
                                             }.padding()
                                         }.frame(height:200)
+                            
+                            HStack {
+                                Text("FruitsList").font(.title).fontWeight(.bold).padding()
+                                Spacer()
+                                Button("View") {
+                                    withAnimation(.spring()) {
+                                        isPresented.toggle()
+                                    }
+                                }
+                                .foregroundColor(.black).frame(width: 80, height: 45, alignment: .center).background(RoundedRectangle(cornerRadius: 15).shadow(radius: 10 ).foregroundColor(.white)).padding().sheet(isPresented: $isPresented){
+                                    ListViewComponent()
+                                }
+                            }
+                            
                             Spacer()
                             
                         }//VSTACK:
